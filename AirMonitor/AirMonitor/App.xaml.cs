@@ -1,6 +1,5 @@
-﻿using System;
+﻿using AirMonitor.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace AirMonitor
 {
@@ -10,19 +9,7 @@ namespace AirMonitor
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
-        }
-
-        protected override void OnStart()
-        {
-        }
-
-        protected override void OnSleep()
-        {
-        }
-
-        protected override void OnResume()
-        {
+            MainPage = new RootTabbedPage();
         }
     }
 }
